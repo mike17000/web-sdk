@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { type Snippet } from 'svelte';
 	import { GlobalStyle } from 'components-ui-html';
-	import { Authenticate, LoaderStakeEngine, LoaderExample, LoadI18n } from 'components-shared';
+	import { Authenticate, LoaderStakeEngine, LoaderImage, LoadI18n } from 'components-shared';
 	import Game from '../components/Game.svelte';
 	import { setContext } from '../game/context';
 
@@ -30,7 +30,7 @@
 <LoaderStakeEngine src={loaderUrlStakeEngine} oncomplete={() => (showYourLoader = true)} />
 
 {#if showYourLoader}
-	<LoaderExample src={loaderUrl} />
+	<LoaderImage src={loaderUrl} />
 	<!-- '/loader.gif' is served from static folder of sveltekit -->
 	<!-- File location: apps/scatter/static/loader.gif -->
 {/if}

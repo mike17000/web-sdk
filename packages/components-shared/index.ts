@@ -1,6 +1,7 @@
 import LoaderBase from './src/components/LoaderBase.svelte';
 import LoaderStakeEngine from './src/components/LoaderStakeEngine.svelte';
 import LoaderExample from './src/components/LoaderExample.svelte';
+import LoaderImage from './src/components/LoaderImage.svelte';
 import OnHotkey from './src/components/OnHotkey.svelte';
 import EnableHotkey from './src/components/EnableHotkey.svelte';
 import EnableSpaceHold from './src/components/EnableSpaceHold.svelte';
@@ -22,6 +23,7 @@ export {
 	LoaderBase,
 	LoaderStakeEngine,
 	LoaderExample,
+	LoaderImage,
 	OnHotkey,
 	EnableHotkey,
 	EnableSpaceHold,
