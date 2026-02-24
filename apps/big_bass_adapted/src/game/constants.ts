@@ -121,7 +121,7 @@ export const PORTRAIT_MAIN_SIZES = {
 	height: PORTRAIT_HEIGHT,
 };
 
-export const HIGH_SYMBOLS = ['H1', 'H2', 'H3', 'H4', 'H5'];
+export const HIGH_SYMBOLS = ['H1', 'H2', 'H3', 'H4']; // H5 removed - not in GAME_REFERENCE.json spec
 
 export const INITIAL_SYMBOL_STATE: SymbolState = 'static';
 
@@ -172,7 +172,7 @@ const h1Static = { type: 'sprite', assetKey: 'h1.webp', sizeRatios: { width: 1, 
 const h2Static = { type: 'sprite', assetKey: 'h2.webp', sizeRatios: { width: 1, height: 1 } };
 const h3Static = { type: 'sprite', assetKey: 'h3.webp', sizeRatios: { width: 1, height: 1 } };
 const h4Static = { type: 'sprite', assetKey: 'h4.webp', sizeRatios: { width: 1, height: 1 } };
-const h5Static = { type: 'sprite', assetKey: 'h5.webp', sizeRatios: { width: 1, height: 1 } };
+// h5Static removed - H5 symbol not in spec
 
 const l1Static = { type: 'sprite', assetKey: 'l1.webp', sizeRatios: { width: 1, height: 1 } };
 const l2Static = { type: 'sprite', assetKey: 'l2.webp', sizeRatios: { width: 1, height: 1 } };
@@ -244,19 +244,7 @@ export const SYMBOL_INFO_MAP = {
 		spin: h4Static,
 		land: h4Static,
 	},
-	H5: {
-		explosion,
-		win: {
-			type: 'spine',
-			assetKey: 'H5',
-			animationName: 'h5',
-			sizeRatios: { width: 0.5 * 0.9, height: HIGH_SYMBOL_SIZE * 0.53 },
-		},
-		postWinStatic: h5Static,
-		static: h5Static,
-		spin: h5Static,
-		land: h5Static,
-	},
+	// H5 removed - not in GAME_REFERENCE.json spec (only H1-H4 high symbols)
 	L1: {
 		explosion,
 		win: {
