@@ -46,7 +46,7 @@ const board = _.range(BOARD_DIMENSIONS.x).map((reelIndex) => {
 		onReelStopping: () => {
 			eventEmitter.broadcast({
 				type: 'soundOnce',
-				name: 'sfx_reel_stop_1',
+				name: `sfx_reel_stop_${(reelIndex % 5) + 1}`,
 				forcePlay: !stateBet.isTurbo,
 			});
 		},

@@ -182,7 +182,7 @@ const l5Static = {
 	type: 'spine',
 	assetKey: 'M',
 	animationName: 'low_multiplier_static',
-	sizeRatios: { width: 0.3, height: 0.3 },
+	sizeRatios: { width: 0.5, height: 0.5 },
 };
 
 const sStatic = { type: 'sprite', assetKey: 's.png', sizeRatios: { width: 1.243, height: 1.243 } };
@@ -194,7 +194,12 @@ const sSizeRatios = { width: 2.5, height: SPECIAL_SYMBOL_SIZE * 2.3 };
 export const SYMBOL_INFO_MAP = {
 	H1: {
 		explosion,
-		win: h1Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'H1',
+			animationName: 'h1',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: h1Static,
 		static: h1Static,
 		spin: h1Static,
@@ -202,7 +207,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	H2: {
 		explosion,
-		win: h2Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'H2',
+			animationName: 'h2',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: h2Static,
 		static: h2Static,
 		spin: h2Static,
@@ -210,7 +220,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	H3: {
 		explosion,
-		win: h3Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'H3',
+			animationName: 'h3',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: h3Static,
 		static: h3Static,
 		spin: h3Static,
@@ -218,7 +233,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	H4: {
 		explosion,
-		win: h4Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'H4',
+			animationName: 'h4',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: h4Static,
 		static: h4Static,
 		spin: h4Static,
@@ -239,7 +259,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	L1: {
 		explosion,
-		win: l1Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'L1',
+			animationName: 'l1',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: l1Static,
 		static: l1Static,
 		spin: l1Static,
@@ -247,7 +272,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	L2: {
 		explosion,
-		win: l2Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'L2',
+			animationName: 'l2',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: l2Static,
 		static: l2Static,
 		spin: l2Static,
@@ -255,7 +285,12 @@ export const SYMBOL_INFO_MAP = {
 	},
 	L3: {
 		explosion,
-		win: l3Static, // Replaced spine with static (fishing theme)
+		win: {
+			type: 'spine',
+			assetKey: 'L3',
+			animationName: 'l3',
+			sizeRatios: { width: 0.9, height: 0.9 },
+		},
 		postWinStatic: l3Static,
 		static: l3Static,
 		spin: l3Static,
@@ -280,7 +315,7 @@ export const SYMBOL_INFO_MAP = {
 			type: 'spine',
 			assetKey: 'M',
 			animationName: 'low_multiplier_pay',
-			sizeRatios: { width: 0.3, height: 0.3 },
+			sizeRatios: { width: 0.5, height: 0.5 },
 		},
 		postWinStatic: l5Static,
 		static: l5Static,
