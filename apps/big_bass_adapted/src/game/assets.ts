@@ -137,7 +137,7 @@ export default {
 		type: 'font',
 		src: new URL('../../assets/fonts/goldFont/mm_gold.xml', import.meta.url).href,
 	},
-	// goldBlur removed - was Mining Mayhem theme font
+	// goldBlur font removed (not used in this game)
 	silverFont: {
 		type: 'font',
 		src: new URL('../../assets/fonts/silverFont/mm_silver.xml', import.meta.url).href,
