@@ -137,10 +137,7 @@ export default {
 		type: 'font',
 		src: new URL('../../assets/fonts/goldFont/mm_gold.xml', import.meta.url).href,
 	},
-	goldBlur: {
-		type: 'font',
-		src: new URL('../../assets/fonts/goldBlur/miningfont_gold_blur.xml', import.meta.url).href,
-	},
+	// goldBlur removed - was Mining Mayhem theme font
 	silverFont: {
 		type: 'font',
 		src: new URL('../../assets/fonts/silverFont/mm_silver.xml', import.meta.url).href,
