@@ -1,1 +1,1 @@
-// Placeholder - goldBlur removed (was Mining theme)
+// Placeholder - font removed (was Mining theme)
