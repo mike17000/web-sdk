@@ -32,16 +32,19 @@
 			anchor={0.5}
 			width={buttonProps.sizes.width}
 			height={buttonProps.sizes.height}
-			backgroundColor={variant === 'dark' ? 0x000000 : 0xffffff}
+			backgroundColor={variant === 'dark' ? 0x6b0000 : 0xffffff}
+			borderWidth={variant === 'dark' ? 3 : 0}
+			borderColor={variant === 'dark' ? 0xffd700 : 0x000000}
 			{...buttonProps.disabled
 				? {
-						backgroundColor: 0xaaaaaa,
+						backgroundColor: 0x3a0000,
+						borderColor: 0x886600,
 					}
 				: {}}
 			{...active
 				? {
-						borderWidth: 10,
-						borderColor: variant === 'dark' ? 0xffffff : 0x000000,
+						borderWidth: 5,
+						borderColor: 0xffd700,
 					}
 				: {}}
 		/>
@@ -52,12 +55,16 @@
 			text={i18nDerived[icon]()}
 			style={{
 				align: 'center',
-				wordWrap: true,
-				wordWrapWidth: 200,
-				fontFamily: 'proxima-nova',
-				fontWeight: '600',
-				fontSize: UI_BASE_FONT_SIZE * 0.9,
-				fill: variant === 'dark' ? 0xffffff : 0x000000,
+				wordWrap: false,
+				wordWrapWidth: 130,
+				fontFamily: 'Cinzel, serif',
+				fontWeight: '700',
+				fontSize: UI_BASE_FONT_SIZE * 0.45,
+				fill: variant === 'dark' ? 0xffd700 : 0x000000,
+				dropShadow: true,
+				dropShadowColor: 0x410500,
+				dropShadowBlur: 2,
+				dropShadowDistance: 1,
 			}}
 		/>
 

@@ -10,7 +10,7 @@
 
 	const props: Partial<Omit<ButtonProps, 'children'>> = $props();
 	const { stateXstateDerived, eventEmitter } = getContext();
-	const sizes = { width: UI_BASE_SIZE, height: UI_BASE_SIZE };
+	const sizes = { width: UI_BASE_SIZE * 1.4, height: UI_BASE_SIZE * 1.4 };
 	const disabled = $derived(!stateXstateDerived.isIdle());
 	const active = $derived(stateBetDerived.activeBetMode()?.type === 'activate');
 
@@ -55,17 +55,10 @@
 			anchor={0.5}
 			width={sizes.width}
 			height={sizes.height}
-			{...disabled
-				? {
-						backgroundColor: 0xaaaaaa,
-					}
-				: {}}
-			{...active
-				? {
-						borderWidth: 10,
-						borderColor: 0xffffff,
-					}
-				: {}}
+			backgroundColor={disabled ? 0x3a0000 : active ? 0x8b6914 : 0xd4a017}
+			borderWidth={4}
+			borderColor={disabled ? 0x886600 : 0x8b6000}
+			borderRadius={18}
 		/>
 
 		<Text
@@ -75,11 +68,12 @@
 			style={{
 				align: 'center',
 				wordWrap: true,
-				wordWrapWidth: 200,
-				fontFamily: 'proxima-nova',
-				fontWeight: '600',
-				fontSize: UI_BASE_FONT_SIZE * 0.9,
-				fill: 0xffffff,
+				wordWrapWidth: 130,
+				fontFamily: 'Cinzel, serif',
+				fontWeight: '900',
+				fontSize: UI_BASE_FONT_SIZE * 0.75,
+				fill: disabled ? 0x886600 : 0x3a0000,
+				dropShadow: false,
 			}}
 		/>
 	{/snippet}

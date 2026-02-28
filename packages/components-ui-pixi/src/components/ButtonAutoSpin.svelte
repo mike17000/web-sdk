@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Container } from 'pixi-svelte';
 	import type { ButtonProps } from 'components-pixi';
-	import { stateBet, stateBetDerived, stateModal } from 'state-shared';
+	import { stateBet, stateBetDerived, stateModal, stateConfig } from 'state-shared';
 
 	import UiButton from './UiButton.svelte';
 	import { getContext } from '../context';
@@ -26,9 +26,11 @@
 		stateBetDerived.hasAutoBetCounter() ? stopAutoSpin() : openModal();
 	};
 </script>
+{#if !stateConfig.jurisdiction.disabledAutoplay}
 
 <UiButton {...props} {sizes} {active} {onpress} {disabled} icon="autoSpin">
 	<Container x={sizes.width * 0.5} y={sizes.height * 0.5}>
 		<ButtonBetAutoSpinsCounter />
 	</Container>
 </UiButton>
+{/if}

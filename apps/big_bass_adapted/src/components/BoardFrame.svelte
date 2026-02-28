@@ -10,8 +10,8 @@
 	import { getContext } from '../game/context';
 
 	const context = getContext();
-	const SPINE_SCALE = { width: 0.62, height: 0.66 };
-	const SPRITE_SCALE = { width: 1.25, height: 0.72 };
+	const SPINE_SCALE = { width: 0.68, height: 0.80 };
+	const SPRITE_SCALE = { width: 1.35, height: 0.88 };
 	const POSITION_ADJUSTMENT = 1.01;
 
 	type AnimationName = 'reelhouse_glow_start' | 'reelhouse_glow_idle' | 'reelhouse_glow_exit';

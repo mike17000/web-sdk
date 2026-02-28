@@ -270,4 +270,61 @@ export default {
 		src: new URL('../../assets/audio/sounds.json', import.meta.url).href,
 		preload: true,
 	},
+	// Real Big Bass PNG symbols (static/symbols/)
+	h1_fisherman: {
+		type: 'sprite',
+		src: '/symbols/h1_fisherman.png',
+	},
+	h2_tacklebox: {
+		type: 'sprite',
+		src: '/symbols/h2_tacklebox.png',
+	},
+	h3_dragonfly: {
+		type: 'sprite',
+		src: '/symbols/h3_dragonfly.png',
+	},
+	h4_fishingrod: {
+		type: 'sprite',
+		src: '/symbols/h4_fishingrod.png',
+	},
+	l1_a: {
+		type: 'sprite',
+		src: '/symbols/l1_a.png',
+	},
+	l2_k: {
+		type: 'sprite',
+		src: '/symbols/l2_k.png',
+	},
+	l3_q: {
+		type: 'sprite',
+		src: '/symbols/l3_q.png',
+	},
+	l4_j: {
+		type: 'sprite',
+		src: '/symbols/l4_j.png',
+	},
+	l5_10: {
+		type: 'sprite',
+		src: '/symbols/l5_10.png',
+	},
+	scatter_bass: {
+		type: 'sprite',
+		src: '/symbols/scatter_bass.png',
+	},
+	wild_bass: {
+		type: 'sprite',
+		src: '/symbols/wild_bass.png',
+	},
+	bg_base: {
+		type: 'sprite',
+		src: '/bg_base.png',
+	},
+	bg_feature: {
+		type: 'sprite',
+		src: '/bg_feature.png',
+	},
+	logo_big_bass: {
+		type: 'sprite',
+		src: '/logo_big_bass.png',
+	},
 } as const;

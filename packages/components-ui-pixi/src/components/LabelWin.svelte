@@ -21,4 +21,6 @@
 	});
 </script>
 
-<UiLabel tiled {label} {value} stacked={props.stacked} />
+{#if stateBet.winBookEventAmount > 0}
+	<UiLabel tiled {label} {value} stacked={props.stacked} />
+{/if}

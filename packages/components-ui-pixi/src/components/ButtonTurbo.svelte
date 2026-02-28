@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ButtonProps } from 'components-pixi';
-	import { stateBet, stateBetDerived } from 'state-shared';
+	import { stateBet, stateBetDerived, stateConfig } from 'state-shared';
 
 	import UiButton from './UiButton.svelte';
 	import { UI_BASE_SIZE } from '../constants';
@@ -22,5 +22,7 @@
 		stopButtonEnable: () => stateBetDerived.updateIsTurbo(false, { persistent: false }),
 	});
 </script>
+{#if !stateConfig.jurisdiction.disabledTurbo}
 
 <UiButton {...props} {sizes} {active} {onpress} {disabled} icon="turbo" />
+{/if}
