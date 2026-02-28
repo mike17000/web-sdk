@@ -78,8 +78,8 @@
 	<!-- drawer container -->
 	<Container y={drawerTween.current}>
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 330}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
@@ -87,7 +87,7 @@
 		{#if !stateConfig.jurisdiction.disabledBuyFeature}
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
@@ -95,28 +95,28 @@
 
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 180}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 180}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 145}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 185}
 		>
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
@@ -125,7 +125,7 @@
 	<Container y={Math.min(drawerTween.current, 350)}>
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 600}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 680}
 		>
 			{@render props.amountWin({ stacked: true })}
 		</Container>
@@ -143,21 +143,21 @@
 	{:else}
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 590}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 635}
 		>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 240}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 200}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 240}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 390}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 200}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
@@ -196,7 +196,7 @@
 	<MainContainer standard alignVertical="bottom">
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 620}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			<Container y={-190 - 210 * 3}>
 				{@render props.buttonPayTable({ anchor: 0.5 })}
