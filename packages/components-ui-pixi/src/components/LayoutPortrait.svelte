@@ -149,14 +149,14 @@
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 175}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 320}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 175}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 320}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
