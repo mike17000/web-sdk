@@ -78,8 +78,8 @@
 	<!-- drawer container -->
 	<Container y={drawerTween.current}>
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 330}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 400}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 300}
 		>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
@@ -149,14 +149,14 @@
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 200}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 175}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 200}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 175}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 425}
 		>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
