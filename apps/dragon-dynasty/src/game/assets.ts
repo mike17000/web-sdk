@@ -12,7 +12,7 @@ export default {
 	},
 	background: {
 		type: 'sprite',
-		src: '/background.jpg',
+		src: '/background_warm_full.jpg',
 		preload: true,
 	},
 	sound: {
