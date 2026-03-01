@@ -81,8 +81,8 @@ export const stateGame = $state({
 
 const boardLayout = () => ({
 	x: stateLayoutDerived.mainLayout().width * 0.5,
-	// v32: board center at y=602 in 1472-high canvas (0.409 fraction)
-	y: stateLayoutDerived.mainLayout().height * 0.409,
+	// v32: board center at y=708 in 1472-high canvas (0.481 fraction) — content y=528-888 matching ref
+	y: stateLayoutDerived.mainLayout().height * 0.481,
 	anchor: { x: 0.5, y: 0.5 },
 	pivot: { x: BOARD_SIZES.width / 2, y: BOARD_SIZES.height / 2 },
 	...BOARD_SIZES,

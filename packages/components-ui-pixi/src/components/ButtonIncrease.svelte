@@ -8,7 +8,7 @@
 
 	const props: Partial<Omit<ButtonProps, 'children'>> = $props();
 	const context = getContext();
-	const sizes = { width: UI_BASE_SIZE * 1.8, height: UI_BASE_SIZE * 0.55 }; // pill shape (V32 match)
+	const sizes = { width: UI_BASE_SIZE * 1.15, height: UI_BASE_SIZE * 0.58 }; // wide pill (V32 match)
 	const biggest = $derived(stateConfig.betAmountOptions[stateConfig.betAmountOptions.length - 1]);
 	const disabled = $derived(!context.stateXstateDerived.isIdle() || stateBet.betAmount === biggest);
 

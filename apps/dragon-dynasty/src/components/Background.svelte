@@ -19,13 +19,13 @@
 	zIndex={-2}
 />
 
-<!-- Dragon Dynasty logo (from v32 reference) -->
+<!-- Dragon Dynasty logo (from v32 reference) — covers full logo zone 0-480px -->
 <Sprite
 	key="gameLogo"
 	x={canvasSizes.width / 2}
-	y={147}
+	y={240}
 	anchor={0.5}
 	width={canvasSizes.width}
-	height={295}
+	height={480}
 	zIndex={2}
 />

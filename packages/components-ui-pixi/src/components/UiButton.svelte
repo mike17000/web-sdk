@@ -14,15 +14,22 @@
 		active?: boolean;
 		children?: Snippet;
 		variant?: 'dark' | 'light';
+		borderRadius?: number;
 	};
 
 	const {
 		icon,
 		active,
 		variant = 'dark',
+		borderRadius,
 		children: childrenFromParent,
 		...buttonProps
 	}: Props = $props();
+
+	// Auto pill shape: if width > height * 1.4, use 16; else default 50
+	const resolvedBorderRadius = $derived(
+		borderRadius ?? (buttonProps.sizes.width > buttonProps.sizes.height * 1.4 ? 16 : 50)
+	);
 </script>
 
 <Button {...buttonProps}>
@@ -32,6 +39,7 @@
 			anchor={0.5}
 			width={buttonProps.sizes.width}
 			height={buttonProps.sizes.height}
+			borderRadius={resolvedBorderRadius}
 			backgroundColor={variant === 'dark' ? 0x6b0000 : 0xffffff}
 			borderWidth={variant === 'dark' ? 3 : 0}
 			borderColor={variant === 'dark' ? 0xffd700 : 0x000000}
@@ -59,7 +67,7 @@
 				wordWrapWidth: 130,
 				fontFamily: 'Cinzel, serif',
 				fontWeight: '700',
-				fontSize: UI_BASE_FONT_SIZE * 0.45,
+				fontSize: UI_BASE_FONT_SIZE * 0.55,
 				fill: variant === 'dark' ? 0xffd700 : 0x000000,
 				dropShadow: true,
 				dropShadowColor: 0x410500,

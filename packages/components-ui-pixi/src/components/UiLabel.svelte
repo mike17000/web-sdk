@@ -65,16 +65,7 @@
 				// Gold border
 				g.roundRect(bx, 0, bw, bh, bh * 0.45);
 				g.stroke({ width: 2.5, color: 0xffd700 });
-				// Left decorative cap (gold circle)
-				g.circle(bx + CAP_R * 0.6, bh * 0.5, CAP_R * 0.7);
-				g.fill({ color: 0x8a1000 });
-				g.circle(bx + CAP_R * 0.6, bh * 0.5, CAP_R * 0.7);
-				g.stroke({ width: 2, color: 0xffd700 });
-				// Right decorative cap (gold circle)
-				g.circle(bx + bw - CAP_R * 0.6, bh * 0.5, CAP_R * 0.7);
-				g.fill({ color: 0x8a1000 });
-				g.circle(bx + bw - CAP_R * 0.6, bh * 0.5, CAP_R * 0.7);
-				g.stroke({ width: 2, color: 0xffd700 });
+				// No circular end-cap ornaments (V32 clean style)
 			}}
 		/>
 	{/if}
@@ -102,15 +93,7 @@
 				// Gold border
 				g.roundRect(0, -bh * 0.5, bw, bh, bh * 0.45);
 				g.stroke({ width: 2.5, color: 0xffd700 });
-				// Decorative end-caps
-				g.circle(CAP_R * 0.6, 0, CAP_R * 0.7);
-				g.fill({ color: 0x8a1000 });
-				g.circle(CAP_R * 0.6, 0, CAP_R * 0.7);
-				g.stroke({ width: 2, color: 0xffd700 });
-				g.circle(bw - CAP_R * 0.6, 0, CAP_R * 0.7);
-				g.fill({ color: 0x8a1000 });
-				g.circle(bw - CAP_R * 0.6, 0, CAP_R * 0.7);
-				g.stroke({ width: 2, color: 0xffd700 });
+				// No circular end-cap ornaments (V32 clean style)
 			}}
 		/>
 	{/if}

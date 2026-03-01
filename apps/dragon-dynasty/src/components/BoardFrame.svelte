@@ -21,14 +21,15 @@
 	const board = $derived(context.stateGameDerived.boardLayout());
 </script>
 
-<!-- Red reel background -->
+<!-- Reel background — covers full frame area (matches frame overlay 4.5x padding) to eliminate blue-grey bg bleed -->
+<!-- Color: 0x2A0503 (R:42,G:5,B:3) — matches ref darkest bg RGB(42,5,3) for contrast -->
 <Rectangle
 	x={board.x}
 	y={board.y}
 	anchor={0.5}
-	width={board.width + PADDING * 2}
-	height={board.height + PADDING * 2}
-	backgroundColor={0x8b1a1a}
+	width={board.width + PADDING * 4.5}
+	height={board.height + PADDING * 4.5}
+	backgroundColor={0x2A0503}
 	borderRadius={8}
 	zIndex={-2}
 />
@@ -47,6 +48,18 @@
 		zIndex={1}
 	/>
 {/if}
+
+<!-- Subtle darkening overlay — tuned down since background is now correctly dark -->
+<Rectangle
+	x={board.x}
+	y={board.y}
+	anchor={0.5}
+	width={board.width}
+	height={board.height}
+	backgroundColor={0x000000}
+	alpha={0.05}
+	zIndex={2}
+/>
 
 <!-- Reel frame overlay from v32 reference -->
 <Sprite

@@ -6,42 +6,43 @@ export const SYMBOL_SIZE = 120;
 
 export const REEL_PADDING = 0.53;
 
-// Dragon Dynasty initial board (padded top and bottom - 5 rows per reel, 3 visible)
+// Dragon Dynasty initial board — v32 reference match (padded top+bottom, 3 rows visible at idx 1,2,3)
+// Reference grid: Row1(top)=W,H1,S,L3,L1 | Row2(mid)=L2,L1,L1,H2,H4 | Row3(bot)=L1,L3,H3,L1,L1
 export const INITIAL_BOARD: RawSymbol[][] = [
 	[
+		{ name: 'W' },
+		{ name: 'W' },
 		{ name: 'L2' },
 		{ name: 'L1' },
-		{ name: 'H2' },
-		{ name: 'L3' },
-		{ name: 'L1' },
+		{ name: 'L2' },
 	],
 	[
 		{ name: 'H1' },
-		{ name: 'L2' },
-		{ name: 'L3' },
-		{ name: 'H3' },
-		{ name: 'L1' },
-	],
-	[
-		{ name: 'L3' },
-		{ name: 'L2' },
-		{ name: 'L1' },
-		{ name: 'H4' },
-		{ name: 'L3' },
-	],
-	[
-		{ name: 'H4' },
-		{ name: 'H3' },
-		{ name: 'L1' },
-		{ name: 'L2' },
-		{ name: 'L3' },
-	],
-	[
-		{ name: 'H3' },
-		{ name: 'L3' },
-		{ name: 'L1' },
 		{ name: 'H1' },
+		{ name: 'L1' },
+		{ name: 'L3' },
+		{ name: 'H1' },
+	],
+	[
+		{ name: 'S' },
+		{ name: 'S' },
+		{ name: 'L1' },
+		{ name: 'H3' },
+		{ name: 'S' },
+	],
+	[
+		{ name: 'L3' },
+		{ name: 'L3' },
 		{ name: 'H2' },
+		{ name: 'L1' },
+		{ name: 'L3' },
+	],
+	[
+		{ name: 'L1' },
+		{ name: 'L1' },
+		{ name: 'H4' },
+		{ name: 'L1' },
+		{ name: 'L1' },
 	],
 ];
 
@@ -76,8 +77,8 @@ export const HIGH_SYMBOLS = ['H1', 'H2', 'H3', 'H4'];
 
 export const INITIAL_SYMBOL_STATE: SymbolState = 'static';
 
-const HIGH_SYMBOL_SIZE = 0.9;
-const LOW_SYMBOL_SIZE = 0.9;
+const HIGH_SYMBOL_SIZE = 1.0;
+const LOW_SYMBOL_SIZE = 1.0;
 const SPECIAL_SYMBOL_SIZE = 1.0;
 
 export const SPIN_OPTIONS_DEFAULT = {

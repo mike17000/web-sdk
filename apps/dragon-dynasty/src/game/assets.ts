@@ -12,7 +12,7 @@ export default {
 	},
 	background: {
 		type: 'sprite',
-		src: '/background_warm_full.jpg',
+		src: '/background.jpg',
 		preload: true,
 	},
 	sound: {
@@ -115,6 +115,22 @@ export default {
 	gameLogo: {
 		type: 'sprite',
 		src: '/logo.png',
+		preload: true,
+	},
+	// V32 original spin button and buy bonus button
+	btnSpin: {
+		type: 'sprite',
+		src: '/btn_spin.png',
+		preload: true,
+	},
+	btnBuyBonus: {
+		type: 'sprite',
+		src: '/btn_buy_bonus.png',
+		preload: true,
+	},
+	btnPlus: {
+		type: 'sprite',
+		src: '/btn_plus.png',
 		preload: true,
 	},
 	// Reel frame overlay (extracted from v32 reference)

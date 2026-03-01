@@ -1,16 +1,15 @@
 <script lang="ts">
-	import { Text } from 'pixi-svelte';
+	import { Sprite, Text } from 'pixi-svelte';
 	import { Button, type ButtonProps } from 'components-pixi';
 	import { stateModal, stateBet, stateBetDerived } from 'state-shared';
 
-	import UiSprite from './UiSprite.svelte';
 	import { UI_BASE_FONT_SIZE, UI_BASE_SIZE } from '../constants';
 	import { getContext } from '../context';
 	import { i18nDerived } from '../i18n/i18nDerived';
 
 	const props: Partial<Omit<ButtonProps, 'children'>> = $props();
 	const { stateXstateDerived, eventEmitter } = getContext();
-	const sizes = { width: UI_BASE_SIZE * 1.4, height: UI_BASE_SIZE * 1.4 };
+	const sizes = { width: UI_BASE_SIZE * 1.4, height: UI_BASE_SIZE * 0.6 };
 	const disabled = $derived(!stateXstateDerived.isIdle());
 	const active = $derived(stateBetDerived.activeBetMode()?.type === 'activate');
 
@@ -49,16 +48,14 @@
 			pressed,
 		})}
 
-		<UiSprite
-			key="buyBonus"
+		<!-- V32 original buy bonus button sprite -->
+		<Sprite
+			key="btnBuyBonus"
 			{...center}
 			anchor={0.5}
 			width={sizes.width}
 			height={sizes.height}
-			backgroundColor={disabled ? 0x3a0000 : active ? 0x8b6914 : 0xd4a017}
-			borderWidth={4}
-			borderColor={disabled ? 0x886600 : 0x8b6000}
-			borderRadius={18}
+			alpha={disabled ? 0.5 : pressed ? 0.85 : 1.0}
 		/>
 
 		<Text
